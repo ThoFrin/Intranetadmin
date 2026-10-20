@@ -1,0 +1,12 @@
+{
+  "name": "MedIntern — Tableau de bord médical",
+  "short_name": "MedIntern",
+  "description": "Tableau de bord médical personnel",
+  "lang": "fr-FR",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f5f9fd",
+  "theme_color": "#1769aa",
+  "icons": []
+}

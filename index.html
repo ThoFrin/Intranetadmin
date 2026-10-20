@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#1769aa">
+  <meta name="description" content="Tableau de bord médical personnel">
+  <title>Intranet personnel</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="manifest" href="manifest.webmanifest">
+</head>
+<body>
+  <header class="topbar">
+    
+    <button class="icon-button" id="settingsButton" aria-label="Paramètres" title="Paramètres">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"></circle><path d="m19.4 15 .1.1 1.4 1.1-1.4 2.4-1.7-.7a8 8 0 0 1-1.7 1l-.3 1.8h-2.8l-.3-1.8a8 8 0 0 1-1.7-1l-1.7.7-1.4-2.4L7.3 15a7.7 7.7 0 0 1 0-2l-1.4-1.1 1.4-2.4 1.7.7a8 8 0 0 1 1.7-1l.3-1.8h2.8l.3 1.8a8 8 0 0 1 1.7 1l1.7-.7 1.4 2.4-1.4 1.1a7.7 7.7 0 0 1 0 2Z"></path></svg>
+    </button>
+  </header>
+
+  <main class="page">
+    <section class="welcome">
+      <div>
+        <p class="eyebrow">TABLEAU DE BORD</p>
+        <h1>Intranet personnel</h1>
+        <p class="subtitle">Les outils essentiels pour l'internat, réunis au même endroit.</p>
+      </div>
+     
+    </section>
+
+    <section class="section-heading">
+      <div><h2>Mes outils</h2><p>Accès rapide à vos ressources</p></div>
+      <span class="tool-count" id="toolCount">7 outils</span>
+    </section>
+
+    <section class="tool-grid" aria-label="Outils médicaux">
+      <a class="tool-card" href="https://thofrin.github.io/Dicto/" data-tool="dictaphone" data-destination="" aria-label="Dictaphone">
+        <span class="tool-icon icon-blue"><svg viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="12" rx="3"></rect><path d="M5 11v1a7 7 0 0 0 14 0v-1M12 19v3m-4 0h8"></path></svg></span>
+        <span class="tool-name">Dictaphone</span><span class="tool-desc">Dictée médicale</span><span class="card-arrow">↗</span>
+      </a>
+      <a class="tool-card" href="https://public.tableau.com/app/profile/has8400/viz/tableau_des_pnds_drive/TableaudesPNDS" data-tool="pnds" data-destination="" aria-label="PNDS, destination à configurer">
+        <span class="tool-icon icon-teal"><svg viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6z"></path><path d="M14 3v5h5M9 12h7M9 16h7"></path></svg></span>
+        <span class="tool-name">PNDS</span><span class="tool-desc">Référentiels de prise en charge des maladies rares</span><span class="card-arrow">↗</span>
+      </a>
+      <a class="tool-card" href="https://drive.google.com/drive/folders/10kIPPDI5DUglkec1WcC_1BhCf4qIBUJh" data-tool="codex" data-destination="" aria-label="CODEX">
+        <span class="tool-icon icon-violet"><svg viewBox="0 0 24 24"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v17H6.5A2.5 2.5 0 0 1 4 17.5z"></path><path d="M4 17.5A2.5 2.5 0 0 1 6.5 15H20M8 7h7M8 10h7"></path></svg></span>
+        <span class="tool-name">CODEX</span><span class="tool-desc">Cours et révisions</span><span class="card-arrow">↗</span>
+      </a>
+      <a class="tool-card" href="https://drive.google.com/drive/folders/1_lUtrX2aQZzChGwxJlvMbWGznStSEm2D" data-tool="internist" data-destination="" aria-label="Internist Academy">
+        <span class="tool-icon icon-orange"><svg viewBox="0 0 24 24"><path d="m3 9 9-5 9 5-9 5z"></path><path d="M7 12v5c3 2 7 2 10 0v-5M21 9v6"></path></svg></span>
+        <span class="tool-name">Internist Academy</span><span class="tool-desc">Cours et révisions</span><span class="card-arrow">↗</span>
+      </a>
+      <a class="tool-card" href="https://www.medicalcul.com/" target="_blank" rel="noopener noreferrer" data-tool="medicalcul">
+        <span class="tool-icon icon-cyan"><svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2"></rect><path d="M8 7h8M8 11h2m4 0h2M8 15h2m4 0h2M8 18h2m4 0h2"></path></svg></span>
+        <span class="tool-name">Medicalcul</span><span class="tool-desc">Calculateurs médicaux</span><span class="card-arrow">↗</span>
+      </a>
+      <a class="tool-card" href="https://www.vidal.fr/" target="_blank" rel="noopener noreferrer" data-tool="vidal">
+        <span class="tool-icon icon-red"><svg viewBox="0 0 24 24"><path d="M4 5h16v14H4z"></path><path d="m8 9 4 6 4-6"></path></svg></span>
+        <span class="tool-name">VIDAL</span><span class="tool-desc">Médicaments et prescriptions</span><span class="card-arrow">↗</span>
+      </a>
+      <a class="tool-card" href="https://www.lifen.fr/" target="_blank" rel="noopener noreferrer" data-tool="lifen">
+        <span class="tool-icon icon-indigo"><svg viewBox="0 0 24 24"><path d="M12 21s-8-4.5-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 6.5-8 11-8 11Z"></path><path d="M8 12h8m-4-4v8"></path></svg></span>
+        <span class="tool-name">LIFEN</span><span class="tool-desc">Plannings de gardes</span><span class="card-arrow">↗</span>
+      </a>
+    </section>
+
+    <section class="notice">
+      <span class="notice-icon">i</span>
+      <p><strong>Usage personnel</strong><br>Cette plateforme ne remplace pas l'intranet officiel et est réservé strictement à un usage personnel ou partagé par le propriétaire à savoir Thomas Frinquard.</p>
+    </section>
+    <footer><span>MedIntern</span><span>Tableau de bord personnel · <span id="year"></span></span></footer>
+  </main>
+
+  <dialog id="settingsDialog" class="settings-dialog">
+    <form method="dialog" id="settingsForm">
+      <div class="dialog-heading">
+        <div><p class="eyebrow">PERSONNALISATION</p><h2>Mes outils</h2></div>
+        <button class="icon-button" value="cancel" aria-label="Fermer">×</button>
+      </div>
+      <p class="dialog-help">Modifiez les destinations, ajoutez vos propres outils ou supprimez ceux dont vous n’avez plus besoin.</p>
+
+      <div class="settings-subheading"><h3>Outils présents</h3><span>Les outils principaux ne peuvent pas être supprimés.</span></div>
+      <div id="settingsToolList" class="settings-tool-list"></div>
+
+      <div class="settings-subheading add-heading"><h3>Ajouter un outil</h3><span>Nom, adresse et icône</span></div>
+      <div class="add-tool-form">
+        <label>Nom de l’outil<input id="newToolName" type="text" maxlength="32" placeholder="Ex. : Banque de données"></label>
+        <label>Destination (URL)<input id="newToolUrl" type="url" placeholder="https://…"></label>
+        <div class="icon-picker-wrap">
+          <span class="field-label">Choisir une icône</span>
+          <div id="iconPicker" class="icon-picker" role="radiogroup" aria-label="Icône de l’outil"></div>
+        </div>
+        <button type="button" class="button-primary add-tool-button" id="addToolButton">＋ Ajouter cet outil</button>
+        <p class="inline-status" id="addToolStatus" role="status"></p>
+      </div>
+
+      <div class="dialog-actions"><button type="button" class="button-secondary" id="resetSettings">Réinitialiser les outils</button><button class="button-primary" value="save" id="saveSettings">Terminer</button></div>
+      <p class="save-status" id="saveStatus" role="status"></p>
+    </form>
+  </dialog>
+  <script src="app.js"></script>
+</body>
+</html>
